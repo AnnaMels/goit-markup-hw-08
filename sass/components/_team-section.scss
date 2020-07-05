@@ -1,0 +1,169 @@
+.team-section {
+    background-color: $team-section-background; 
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.16;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.image {
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .team-section-list {
+        display: flex;
+    }
+}
+
+.team-section-list {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+
+    > li {
+        background-color: $background-color;
+        list-style: none;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .first-item {
+        margin: 15px;
+        // width: calc(100% / 2 - 2 * 15px);
+    }
+}
+
+.first-item {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.team-section,
+.team-section-list h3,
+.team-section-list p {
+    display: $display;
+    justify-content: center;
+}
+
+.secondary-list {
+    display: $display;
+    padding-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    padding-bottom: 24px;
+
+ li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    } 
+}
+
+.secondary-list .item + .item {
+    margin-left: 10px;
+}
+
+.team-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    justify-content: center;
+    display: $display;
+    margin-bottom: 30px;
+}
+
+// .team-section-list .first-item + .first-item {
+//     margin-left: 30px;
+// }
+
+.team-section p {
+    color: $secondary-text-color;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    color: $social-link-color;
+    border-radius: 50%;
+}
+
+
+.secondary-list a {
+    display: $display;
+    justify-content: center;
+    align-items: center;
+    transition-property: $background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+&:hover {
+    background-color: $accent-color;
+    color: $background-color;
+    }
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .team-section-list {
+        list-style: none;
+        padding: 0px;
+        margin: -15px;
+        display: $display;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .first-item {
+        width: calc(100% / 2 - 2 * 15px);
+        margin: 15px;
+    }
+}
+
+//Tablet
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .team-section-list {
+        > li {
+            width: calc(100% / 2 - 2 * 15px);
+        }
+    }
+}
+
+// UI Fix
+@media screen and (min-width: 768px) and (max-width: 970px) {
+    .first-item {
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icon {
+        width: 15px;
+        height: 15px;
+    }
+}

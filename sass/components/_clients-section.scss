@@ -1,0 +1,118 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.clients h2 {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: $display;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .clients-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+
+        .item {
+            margin-right: 30px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clients-list {
+        list-style: none;
+        padding: 0px;
+        margin: -15px;
+        display: $display;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .clients-list .item {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .clients-list {
+        list-style: none;
+        padding: 0px;
+        margin: -15px;
+        display: $display;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .clients-list .item {
+        width: calc(100% / 3 - 2 * 15px);
+        margin: 15px;
+    }
+}
+
+
+// &:nth-child(2) {
+//     margin-left: 30px;
+// }
+
+// &:nth-child(4) {
+//     margin-left: 30px;
+// }
+
+// &:nth-child(6) {
+//     margin-left: 30px;
+//     margin-bottom: 0px;
+// }
+
+// &:nth-child(5) {
+//     margin-bottom: 0px;
+// }
+
+
+
+
+
+.company {
+    fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+    .company-link {
+        height: 90px;
+    display: $display;
+    justify-content: center;
+    align-items: center;
+    }
+}
+.company-link {
+    height: 90px;
+    display: $display;
+    justify-content: center;
+    align-items: center;
+    color: $social-link-color;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:hover {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+@import './utils/variables';
+@import './components/body';
+@import './components/page-header';
+@import './components/logo';
+@import './components/container';
+@import './components/hero';
+@import './components/feature-section';
+@import './components/option-section';
+@import './components/team-section';
+@import './components/clients-section';
+@import './components/footer';
+@import './components/modal';
+@import './components/form';
+@import './components/portfolio-list';
+@import './components/list-item-portfolio';
+@import './components/buttons-filters';

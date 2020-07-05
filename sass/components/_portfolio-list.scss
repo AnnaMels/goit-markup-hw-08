@@ -1,0 +1,120 @@
+.portfolio-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: $display;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .portfolio-list {
+        margin: -15px;
+        padding-bottom: 60px;
+    }
+
+    .portfolio-list:last-child {
+        justify-content: start;
+    }
+}
+
+.portfolio-list h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.portfolio-list p {
+    padding-left: 24px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: $display;
+    justify-content: start;
+    padding-bottom: 20px;
+    
+}
+
+.portfolio-list li {
+    border: 1px solid #EEEEEE;
+
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.second-title {
+    padding-top: 20px;
+    margin-bottom: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.text-description {
+    position: relative;
+    overflow: hidden;
+
+&:before {
+    content: '';
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+   
+    } 
+}
+
+.secondary-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    top: 30%;
+    left: 0;
+    opacity: 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px;  
+    display: $display;
+    justify-content: center;
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .secondary-text {
+        top: 10%;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .portfolio-list {
+        margin: -15px;
+    }
+
+    .projects {
+        padding-bottom: 94px;
+    }
+}

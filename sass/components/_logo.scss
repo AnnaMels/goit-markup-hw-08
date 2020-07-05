@@ -1,0 +1,28 @@
+.logo-item {
+    color: $accent-color;
+    font-weight: 700;
+}
+
+.logo {
+    color: $title-text-color;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+   
+}
+
+.logotype-item, .studio-item {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+}
+
+.logotype-item {
+    color: $accent-color;
+}
+.studio-item {
+    color: $background-color;
+}

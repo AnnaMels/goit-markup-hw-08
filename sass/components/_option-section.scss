@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px) {
+    .option-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .option-list li {
+    width: calc(100% / 3 - 2 * 15px);
+    margin: 15px;
+    }
+
+    .option-section {
+        margin: -15px;
+    }
+}
+
+.option-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+.option-section h2 {
+    justify-content: center;
+    display: $display;
+    font-size: 36px;
+}
+
+.option-image {
+    display: block;
+    max-width: 100%;
+}
+
+.option-list {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+& a {
+    text-decoration: none;
+    }
+}
+
+.list-description {
+    position: absolute;
+    background: $section-background-color;
+    height: 70px;
+    bottom: 13px;
+    width: calc(100% / 3 - 2 * 15px);
+}
+
+.option-list li {
+    // max-width: 370px;
+
+&:last-child {
+    margin-right: 15px;
+    }
+}
+
+.option-list p {
+    color: $background-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
