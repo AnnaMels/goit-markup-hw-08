@@ -63,10 +63,14 @@ img {
   left: 0;
   padding-left: 40px;
   padding-top: 48px;
+  padding-bottom: 48px;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -155,7 +159,6 @@ img {
 
 .navigation-list {
   padding: 0;
-  margin-bottom: 302px;
 }
 
 .navigation-list__item:not(:last-child),
@@ -443,9 +446,9 @@ img {
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .overlay {
-    max-width: 1200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-background-desktop.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-desktop.jpg);
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url(../images/hero-background-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../images/hero-background-desktop.jpg);
   }
   .hero {
     padding: 200px 0;
@@ -744,6 +747,7 @@ img {
   }
   .team__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -826,6 +830,7 @@ img {
   }
   .clients__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
   .clients-list__item {
     width: 170px;

@@ -12,10 +12,12 @@
   left: 0;
   padding-left: 40px;
   padding-top: 48px;
+  padding-bottom: 48px;
   background-color: $white;
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  justify-content: space-between;
 
   @media screen and (max-width: 767px) {
     &.is-open {
@@ -58,7 +60,6 @@
 
 .container-header {
   display: flex;
-  // width: 1200px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -98,7 +99,6 @@
 
 .navigation-list {
   padding: 0;
-  margin-bottom: 302px;
 }
 
 .navigation-list__item:not(:last-child),
