@@ -1,0 +1,129 @@
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 0 0 30px 0;
+}
+
+.team {
+  text-align: center;
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  // display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__item {
+    max-width: 450px;
+  }
+}
+
+.team-list__item {
+  list-style-type: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
+  background-color: $white;
+  // max-width: 450px;
+  margin: 0 auto;
+}
+
+.team__image {
+  width: 100%;
+}
+
+.team-list__title,
+.team-list__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 30px 0 10px 0;
+}
+
+.team-list__text {
+  color: $gray;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+}
+
+.socials {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  list-style-type: none;
+  color: $gray;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.socials__link {
+  color: rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function,
+    fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $white;
+    border-radius: 50%;
+    transition: background-color 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    justify-content: center;
+  }
+  .team-list__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 0;
+    flex-basis: calc((100% - 60px) / 2);
+    // max-width: 354px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .team__title {
+    font-size: 36px;
+  }
+}
